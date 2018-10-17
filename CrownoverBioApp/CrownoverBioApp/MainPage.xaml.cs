@@ -12,6 +12,22 @@ namespace CrownoverBioApp
         public MainPage()
         {
             InitializeComponent();
+         
+        }
+
+        private void navigationButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AboutMePage());
+        }
+
+        private void skillsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SkillsPage());
+        }
+
+        private void contactmeButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ContactMePage());
         }
     }
 }

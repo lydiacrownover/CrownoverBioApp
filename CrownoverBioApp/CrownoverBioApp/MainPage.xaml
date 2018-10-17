@@ -5,27 +5,153 @@
              x:Class="CrownoverBioApp.MainPage">
 
 <ScrollView>
-        <StackLayout BackgroundColor="White">
+        <StackLayout BackgroundColor="White" Spacing="0" >
             <Grid>
                 <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
+                    <RowDefinition Height="75"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="110"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="110"/>
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="35"/>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="210"/>
                 </Grid.ColumnDefinitions>
-                <Label Text="Lydia Crownover"
-               Margin="17"
-                       BackgroundColor="MediumOrchid"
-           HorizontalOptions="Center"
+
+                <Label               
+                Text="          Lydia Crownover"
+             Grid.Row="0" Grid.Column="1" 
+                    Grid.ColumnSpan="3"
+               BackgroundColor="White"
+             HorizontalOptions="Center"
                        WidthRequest="325"
-           HorizontalTextAlignment="Center"
-            VerticalTextAlignment="Center"        
-           VerticalOptions="Center"
+             HorizontalTextAlignment="Start"
+             VerticalTextAlignment="Center"        
+             VerticalOptions="Start"
                        HeightRequest="60"
-               TextColor="White"
-               FontSize="28"
-                FontFamily="Century Gothic"/>
+               FontFamily="Century Gothic"
+               TextColor="Purple"
+               FontSize="24"
+               />
+              
+
+                <Button
+                    Grid.Row="3" Grid.Column="1"
+                    BackgroundColor="Purple"
+                    WidthRequest="100"
+                    HeightRequest="100"
+                    Opacity=".5"
+                    x:Name="navigationButton"
+                    Clicked="navigationButton_Clicked"
+                    />
+               
+                    <BoxView
+                        Grid.Row="1"
+                        Grid.ColumnSpan="4"
+                     BackgroundColor=" Black"
+                        HorizontalOptions="StartandExpand"
+                        VerticalOptions="Start"                   
+                        HeightRequest="5"
+                        Opacity=".5"                      
+                     />
+               
+                <Label              
+                Text="About"
+            Grid.Row="3" Grid.Column="2"
+               BackgroundColor="MediumOrchid" 
+             HorizontalOptions="Start"
+                        WidthRequest="150"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             VerticalOptions="End"
+                       HeightRequest="60"
+                FontFamily="CenturyGothic"
+                TextColor="White"
+                FontSize="20"
+               />
+                <BoxView
+                        Grid.Row="6"
+                        Grid.ColumnSpan="4"
+                     BackgroundColor=" Black"
+                        HorizontalOptions="End"
+                        VerticalOptions="Start"
+                        WidthRequest="337"
+                        HeightRequest="5"
+                        Opacity=".5"
+                     />
+                <BoxView
+                        Grid.Row="4"
+                        Grid.ColumnSpan="4"
+                     BackgroundColor=" Black"
+                        HorizontalOptions="End"
+                        VerticalOptions="Start"
+                        WidthRequest="337"
+                        HeightRequest="5"
+                        Opacity=".5"
+                     />
+                <BoxView
+                        Grid.Row="8"
+                        Grid.ColumnSpan="4"
+                     BackgroundColor=" Black"
+                        HorizontalOptions="End"
+                        VerticalOptions="Start"
+                        WidthRequest="337"
+                        HeightRequest="5"
+                        Opacity=".5"
+                     />
+                <Button
+                    Grid.Row="5" Grid.Column="1"
+                    BackgroundColor="Purple"
+                    WidthRequest="100"
+                    HeightRequest="100"
+                    Opacity=".5"
+                    x:Name="skillsButton"
+                    Clicked="skillsButton_Clicked"
+                    />
+                
+                <Label Text="Skills"
+            Grid.Row="5" Grid.Column="2"
+               BackgroundColor="MediumOrchid" 
+             HorizontalOptions="Start"
+                        WidthRequest="150"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             VerticalOptions="End"
+                       HeightRequest="60"
+                FontFamily="CenturyGothic"
+                TextColor="White"
+                FontSize="20"
+               />
+                <Button
+                    Grid.Row="7" Grid.Column="1"
+                    BackgroundColor="Purple"
+                    WidthRequest="100"
+                    HeightRequest="100"
+                    Opacity=".5"
+                    x:Name="contactmeButton"
+                    Clicked="contactmeButton_Clicked"
+                    />
+                
+                <Label Text="Contact"
+            Grid.Row="7" Grid.Column="2"
+               BackgroundColor="MediumOrchid" 
+             HorizontalOptions="Start"
+                        WidthRequest="150"
+             HorizontalTextAlignment="Center"
+             VerticalTextAlignment="Center"
+             VerticalOptions="End"
+                       HeightRequest="60"
+                FontFamily="CenturyGothic"
+                TextColor="White"
+                FontSize="20"
+               />
+
 
             </Grid>
     </StackLayout>

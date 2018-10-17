@@ -4,9 +4,49 @@
              x:Class="CrownoverBioApp.AboutMePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="110"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="110"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="110"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="35"/>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="210"/>
+                </Grid.ColumnDefinitions>
+
+                <Label               
+                Text="          Lydia Crownover"
+             Grid.Row="0" Grid.Column="1" 
+                    Grid.ColumnSpan="3"
+               BackgroundColor="White"
+             HorizontalOptions="Center"
+                       WidthRequest="325"
+             HorizontalTextAlignment="Start"
+             VerticalTextAlignment="Center"        
+             VerticalOptions="Start"
+                       HeightRequest="60"
+               FontFamily="Century Gothic"
+               TextColor="Purple"
+               FontSize="24"
+               />
+                <Button
+                    Grid.Row="0" Grid.Column="0"
+                    BackgroundColor="Black"
+                    WidthRequest="35"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    HeightRequest="50"
+                    Opacity=".5"
+                    />
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
