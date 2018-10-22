@@ -10,11 +10,11 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="75"/>
                 <RowDefinition Height="20"/>
-                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/> <!-- space-->
                 <RowDefinition Height="110"/>
-                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/> <!-- space-->
                 <RowDefinition Height="110"/>
-                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/> <!-- space-->
                 <RowDefinition Height="110"/>
                 </Grid.RowDefinitions>
 
@@ -40,40 +40,43 @@
                FontSize="24"
                />
               
-
-                <Button
-                    Grid.Row="3" Grid.Column="1"
-                    BackgroundColor="Purple"
-                    WidthRequest="100"
-                    HeightRequest="100"
-                    Opacity=".5"
-                    x:Name="navigationButton"
-                    Clicked="navigationButton_Clicked"
-                    />
-               
-                    <BoxView
+                <BoxView
                         Grid.Row="1"
                         Grid.ColumnSpan="4"
                      BackgroundColor=" Black"
-                        HorizontalOptions="StartandExpand"
+                        HorizontalOptions="Fill"
                         VerticalOptions="Start"                   
                         HeightRequest="5"
                         Opacity=".5"                      
                      />
-               
-                <Label              
+                
+                <BoxView
+                    Grid.Row="3" Grid.Column="1"
+                    BackgroundColor="Purple"
+                    WidthRequest="100"
+                    HeightRequest="100"
+                    Opacity=".5"                   
+                    />
+                <Image x:Name="betterabouticon"
+                    Source="betterabouticon.png"                     
+                       Grid.Row="3" Grid.Column="1"
+                       WidthRequest="80"
+                       HeightRequest="80"              
+                    />
+                
+                <Button              
                 Text="About"
             Grid.Row="3" Grid.Column="2"
                BackgroundColor="MediumOrchid" 
              HorizontalOptions="Start"
-                        WidthRequest="150"
-             HorizontalTextAlignment="Center"
-             VerticalTextAlignment="Center"
+                        WidthRequest="150"            
              VerticalOptions="End"
                        HeightRequest="60"
                 FontFamily="CenturyGothic"
                 TextColor="White"
-                FontSize="20"
+                FontSize="18"
+                x:Name="navigationButton"
+                    Clicked="navigationButton_Clicked"   
                />
                 <BoxView
                         Grid.Row="6"
@@ -105,51 +108,59 @@
                         HeightRequest="5"
                         Opacity=".5"
                      />
-                <Button
+                <BoxView
                     Grid.Row="5" Grid.Column="1"
                     BackgroundColor="Purple"
                     WidthRequest="100"
                     HeightRequest="100"
-                    Opacity=".5"
-                    x:Name="skillsButton"
-                    Clicked="skillsButton_Clicked"
+                    Opacity=".5"                   
                     />
-                
-                <Label Text="Skills"
+                <Image x:Name="betterskillsicon"
+                    Source="betterskillsicon.png"
+                       Grid.Row="5" Grid.Column="1"
+                       WidthRequest="80"
+                       HeightRequest="80"              
+                    />
+
+                <Button Text="Skills"
             Grid.Row="5" Grid.Column="2"
                BackgroundColor="MediumOrchid" 
              HorizontalOptions="Start"
                         WidthRequest="150"
-             HorizontalTextAlignment="Center"
-             VerticalTextAlignment="Center"
              VerticalOptions="End"
                        HeightRequest="60"
                 FontFamily="CenturyGothic"
                 TextColor="White"
-                FontSize="20"
+                FontSize="18"
+                x:Name="skillsButton"
+                Clicked="skillsButton_Clicked"
                />
-                <Button
+                <BoxView
                     Grid.Row="7" Grid.Column="1"
                     BackgroundColor="Purple"
                     WidthRequest="100"
                     HeightRequest="100"
-                    Opacity=".5"
-                    x:Name="contactmeButton"
-                    Clicked="contactmeButton_Clicked"
+                    Opacity=".5"                   
                     />
+                <Image x:Name="contacticon"
+                    Source="contacticon.png"
+                       Grid.Row="7" Grid.Column="1"
+                       WidthRequest="80"
+                       HeightRequest="80"              
+                    /> 
                 
-                <Label Text="Contact"
+                <Button Text="Contact"
             Grid.Row="7" Grid.Column="2"
                BackgroundColor="MediumOrchid" 
              HorizontalOptions="Start"
                         WidthRequest="150"
-             HorizontalTextAlignment="Center"
-             VerticalTextAlignment="Center"
              VerticalOptions="End"
                        HeightRequest="60"
                 FontFamily="CenturyGothic"
                 TextColor="White"
-                FontSize="20"
+                FontSize="18"
+                x:Name="contactmeButton"
+                Clicked="contactmeButton_Clicked"
                />
 
 

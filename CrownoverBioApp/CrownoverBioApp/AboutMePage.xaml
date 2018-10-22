@@ -3,16 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CrownoverBioApp.AboutMePage">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout  BackgroundColor="White">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="75"/>
                     <RowDefinition Height="20"/>
                     <RowDefinition Height="35"/>
                     <RowDefinition Height="110"/>
-                    <RowDefinition Height="35"/>
-                    <RowDefinition Height="110"/>
-                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
                     <RowDefinition Height="110"/>
                 </Grid.RowDefinitions>
 
@@ -45,6 +45,46 @@
                     VerticalOptions="Center"
                     HeightRequest="50"
                     Opacity=".5"
+                    />
+                <BoxView
+                        Grid.Row="1"
+                        Grid.ColumnSpan="4"
+                     BackgroundColor=" Black"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Start"                   
+                        HeightRequest="5"
+                        Opacity=".5"                      
+                />
+                <Image x:Name="app"
+                       Source="app.jpg"
+                       Grid.Row="3"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="3"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       WidthRequest="200"
+                 />
+                <Label Text="About"
+                       Grid.Row="4" Grid.Column="2"
+                       Grid.ColumnSpan="4"
+                       BackgroundColor="White"
+                       TextColor="Purple"
+                       FontSize="22"
+                    />
+                <Label Text="Born and Raised:"                     
+                       Grid.Row="5" Grid.Column="1"
+                       TextColor="Purple"
+                       BackgroundColor="White"
+                       FontSize="20"    
+                       Grid.ColumnSpan="2"
+                    />
+                <Label Text="Wichita, KS"                     
+                       Grid.Row="6" Grid.Column="2"
+                       TextColor="Purple"
+                       BackgroundColor="White"
+                       FontSize="20"    
+                       Grid.ColumnSpan="2"
+                       VerticalOptions="Start"
                     />
             </Grid>
         </StackLayout>
