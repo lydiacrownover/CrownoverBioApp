@@ -16,5 +16,30 @@ namespace CrownoverBioApp
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void Button_Clicked(object sender, EventArgs e)
+        { 
+            if(string.IsNullOrEmpty(nameEntry.Text)) 
+            {
+                DisplayAlert("Error", "Please Enter Name", "Ok");
+                return;
+            }
+            if (string.IsNullOrEmpty(emailEntry.Text))
+            {
+                DisplayAlert("Error", "Please Enter Email", "Ok");
+                return;
+            }
+            if (string.IsNullOrEmpty(numberEntry.Text))
+            {
+                DisplayAlert("Error", "Please Enter Phone Number", "Ok");
+                return;
+            }
+            if (string.IsNullOrEmpty(messageEditor.Text))
+            {
+                DisplayAlert("Error", "Please Create a Message", "Ok");
+                return;
+            }
+            DisplayAlert("Title","Message Here", "Okay");
+        }
+    }
 }

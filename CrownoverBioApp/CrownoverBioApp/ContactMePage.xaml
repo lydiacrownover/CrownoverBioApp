@@ -3,10 +3,63 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CrownoverBioApp.ContactMePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout BackgroundColor="White" Spacing="20" Padding="20">
+                <StackLayout Orientation="Horizontal">
+                    <Button                  
+                    BackgroundColor="DimGray"
+                    WidthRequest="35"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    HeightRequest="50"
+                    Opacity=".5"
+                    />
+                    <Label               
+                Text="          Lydia Crownover"
+            
+               BackgroundColor="White"
+             HorizontalOptions="Center"
+                       WidthRequest="325"
+             HorizontalTextAlignment="Start"
+             VerticalTextAlignment="Center"        
+             VerticalOptions="Start"
+                       HeightRequest="60"
+               FontFamily="Century Gothic"
+               TextColor="Purple"
+               FontSize="24"
+               />
+                </StackLayout>
+                <BoxView                      
+                     BackgroundColor=" Black"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Start"                   
+                        HeightRequest="5"
+                        Opacity=".5"
+                    />
+                <Label Text="Contact Me"
+                   TextColor="Purple"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                />
+                <Entry x:Name="nameEntry" Placeholder="Name"
+                 TextColor="Gray"
+               />
+                <Entry x:Name="emailEntry" Placeholder="Email"
+                 TextColor="DarkGray"
+                />
+                <Entry x:Name="numberEntry" Placeholder="Phone Number"
+                 TextColor="DarkGray"
+                />
+                <Label Text="Leave Me a Message Here!"
+                />
+                <Editor x:Name="messageEditor" HeightRequest="100"
+                />
+                <Button Text="Submit"
+                    BackgroundColor="MediumOrchid"
+                    TextColor="White"
+                   Clicked="Button_Clicked"
+                />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

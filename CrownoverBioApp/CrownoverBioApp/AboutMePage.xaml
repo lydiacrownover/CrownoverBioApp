@@ -3,26 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CrownoverBioApp.AboutMePage">
     <ContentPage.Content>
-        <StackLayout  BackgroundColor="White">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="75"/>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="35"/>
-                    <RowDefinition Height="110"/>
-                    <RowDefinition Height="25"/>
-                    <RowDefinition Height="25"/>
-                    <RowDefinition Height="25"/>
-                    <RowDefinition Height="110"/>
-                </Grid.RowDefinitions>
+        <ScrollView>
+            <StackLayout  BackgroundColor="White">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="75"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="110"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                        <RowDefinition Height="25"/>
+                    </Grid.RowDefinitions>
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="35"/>
-                    <ColumnDefinition Width="110"/>
-                    <ColumnDefinition Width="210"/>
-                </Grid.ColumnDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="110"/>
+                        <ColumnDefinition Width="210"/>
+                    </Grid.ColumnDefinitions>
 
-                <Label               
+                    <Label               
                 Text="          Lydia Crownover"
              Grid.Row="0" Grid.Column="1" 
                     Grid.ColumnSpan="3"
@@ -37,16 +43,24 @@
                TextColor="Purple"
                FontSize="24"
                />
-                <Button
+                    <Button 
                     Grid.Row="0" Grid.Column="0"
-                    BackgroundColor="Black"
+                    BackgroundColor="DimGray"
                     WidthRequest="35"
                     HorizontalOptions="Start"
                     VerticalOptions="Center"
                     HeightRequest="50"
                     Opacity=".5"
                     />
-                <BoxView
+                    <Image x:Name="backicon"
+                      Source="backicon.png"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       WidthRequest="35"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"
+                      />
+                    <BoxView
                         Grid.Row="1"
                         Grid.ColumnSpan="4"
                      BackgroundColor=" Black"
@@ -55,38 +69,168 @@
                         HeightRequest="5"
                         Opacity=".5"                      
                 />
-                <Image x:Name="app"
+                    <Image x:Name="app"
                        Source="app.jpg"
                        Grid.Row="3"
                        Grid.Column="0"
                        Grid.ColumnSpan="3"
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
-                       WidthRequest="200"
+                       WidthRequest="275"
+                       
                  />
-                <Label Text="About"
+                    <Label Text="About"
                        Grid.Row="4" Grid.Column="2"
-                       Grid.ColumnSpan="4"
+                       Grid.ColumnSpan="3"
                        BackgroundColor="White"
                        TextColor="Purple"
-                       FontSize="22"
+                       FontAttributes="Bold"
+                       FontSize="24"
+                       VerticalTextAlignment="Center"                      
                     />
-                <Label Text="Born and Raised:"                     
-                       Grid.Row="5" Grid.Column="1"
+                    <BoxView
+                        Grid.Row="5"
+                        Grid.ColumnSpan="4"
+                     BackgroundColor=" Black"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Start"                      
+                        HeightRequest="2"
+                        Opacity=".5"                      
+                />
+                    <Label Text="Born and Raised:"                     
+                       Grid.Row="6" Grid.Column="1"
                        TextColor="Purple"
                        BackgroundColor="White"
                        FontSize="20"    
                        Grid.ColumnSpan="2"
                     />
-                <Label Text="Wichita, KS"                     
-                       Grid.Row="6" Grid.Column="2"
+                    <Label Text="Wichita, KS"                     
+                       Grid.Row="7" Grid.Column="2"
                        TextColor="Purple"
                        BackgroundColor="White"
                        FontSize="20"    
+                       FontAttributes="Italic"
                        Grid.ColumnSpan="2"
                        VerticalOptions="Start"
                     />
-            </Grid>
-        </StackLayout>
+                    <BoxView
+                        Grid.Row="7"
+                        Grid.ColumnSpan="4"
+                     BackgroundColor=" Black"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        WidthRequest="337"
+                        HeightRequest="2"
+                        Opacity=".5"                      
+                />
+                    <Label Text="Birthday:"
+                       Grid.Row="8" Grid.Column="1"
+                       TextColor="Purple"
+                       BackgroundColor="White"
+                       FontSize="20"
+                       Grid.ColumnSpan="2"
+                    />
+                    <Label Text="December 19, 1997"
+                       Grid.Row="9" Grid.Column="2"
+                       TextColor="Purple"
+                       BackgroundColor="White"
+                       FontSize="20"
+                       FontAttributes="Italic"
+                       Grid.ColumnSpan="2"
+                       VerticalOptions="Start"
+                    />
+                    <BoxView
+                        Grid.Row="9"
+                        Grid.ColumnSpan="4"
+                     BackgroundColor=" Black"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        WidthRequest="337"
+                        HeightRequest="2"
+                        Opacity=".5"                      
+                />
+                    <Label Text="Favorite Person:"
+                       Grid.Row="10" Grid.Column ="1"
+                       Grid.ColumnSpan="2"
+                       TextColor="Purple"
+                       BackgroundColor="White"
+                       FontSize="20"
+                    />
+                    <Label Text="Vincent Van Gogh"
+                       Grid.Row="11" Grid.Column="2"
+                       Grid.ColumnSpan="2"
+                       TextColor="Purple"
+                       BackgroundColor="White"
+                       FontSize="20"
+                       FontAttributes="Italic"
+                       VerticalOptions="Start"
+                    />
+                    <BoxView
+                        Grid.Row="11"
+                        Grid.ColumnSpan="4"
+                     BackgroundColor=" Black"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        WidthRequest="337"
+                        HeightRequest="2"
+                        Opacity=".5"                      
+                />
+                    <Label Text="Favorite Color:"
+                       Grid.Row="12" Grid.Column ="1"
+                       Grid.ColumnSpan="2"
+                       TextColor="Purple"
+                       BackgroundColor="White"
+                       FontSize="20"
+                    />
+                    <Label Text="Purple Mountain's Majesty"
+                       Grid.Row="13" Grid.Column="1"
+                       Grid.ColumnSpan="2"
+                       TextColor="Purple"
+                       BackgroundColor="White"
+                       FontSize="20"
+                       FontAttributes="Italic"
+                       VerticalOptions="Start"
+                       HorizontalOptions="End"
+                    />
+                    <BoxView
+                        Grid.Row="13"
+                        Grid.ColumnSpan="4"
+                     BackgroundColor=" Black"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        WidthRequest="337"
+                        HeightRequest="2"
+                        Opacity=".5"                      
+                />
+                    <Label Text="Favorite Food:"
+                       Grid.Row="14" Grid.Column ="1"
+                       Grid.ColumnSpan="2"
+                       TextColor="Purple"
+                       BackgroundColor="White"
+                       FontSize="20"
+                    />
+                    <Label Text="Cheeseburger and Fries"
+                       Grid.Row="15" Grid.Column="1"
+                       Grid.ColumnSpan="2"
+                       TextColor="Purple"
+                       BackgroundColor="White"
+                       FontSize="20"
+                       FontAttributes="Italic"
+                       VerticalOptions="Start"
+                       HorizontalOptions="End"
+                    />
+                    <BoxView
+                        Grid.Row="15"
+                        Grid.ColumnSpan="4"
+                     BackgroundColor=" Black"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"
+                        WidthRequest="337"
+                        HeightRequest="2"
+                        Opacity=".5"                      
+                />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
