@@ -159,8 +159,8 @@
                 FontFamily="CenturyGothic"
                 TextColor="White"
                 FontSize="18"
-                x:Name="contactmeButton"
-                Clicked="contactmeButton_Clicked"
+                x:Name="ContactButton"
+                Clicked="ContactButton_Clicked"
                />
 
 

@@ -39,7 +39,7 @@ namespace CrownoverBioApp
                 DisplayAlert("Error", "Please Create a Message", "Ok");
                 return;
             }
-            DisplayAlert("Title","Message Here", "Okay");
+            DisplayAlert("Alert","Thank you for contacting me!", "Okay");
         }
     }
 }

@@ -20,6 +20,11 @@ namespace CrownoverBioApp
 			InitializeComponent ();
 
             this.Skills = new ObservableCollection<string>();
+            this.Skills.Add("HTML");
+            this.Skills.Add("CSS");
+            this.Skills.Add("add stuff to this list!");
+
+            skillsListView.ItemsSource = this.Skills;
 		}
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -36,4 +41,5 @@ namespace CrownoverBioApp
             skillsListView.ItemsSource = this.Skills;
         }
     }
+    
 }

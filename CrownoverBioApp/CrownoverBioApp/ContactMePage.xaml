@@ -4,8 +4,8 @@
              x:Class="CrownoverBioApp.ContactMePage">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="White" Spacing="20" Padding="20">
-                <StackLayout Orientation="Horizontal">
+            <StackLayout BackgroundColor="White" Spacing="10" Padding="0">
+                <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
                     <Button                  
                     BackgroundColor="DimGray"
                     WidthRequest="35"
@@ -15,7 +15,7 @@
                     Opacity=".5"
                     />
                     <Label               
-                Text="          Lydia Crownover"
+                Text="           Lydia Crownover"
             
                BackgroundColor="White"
              HorizontalOptions="Center"
@@ -36,13 +36,24 @@
                         HeightRequest="5"
                         Opacity=".5"
                     />
-                <Label Text="Contact Me"
+                <StackLayout Orientation="Horizontal" Padding="30" Spacing="40">
+                    <Image x:Name="contacticon"
+                    Source="contacticon.png"
+                      VerticalOptions="Center"
+                       WidthRequest="80"
+                       HeightRequest="80"
+                      BackgroundColor="Purple"
+                    />
+                    <Label Text="Contact Me"
                    TextColor="Purple"
+                   VerticalOptions="Center"
                    HorizontalOptions="Center"
                    FontAttributes="Bold"
+                   FontSize="18"
                 />
+                </StackLayout>
                 <Entry x:Name="nameEntry" Placeholder="Name"
-                 TextColor="Gray"
+                 TextColor="DarkGray"
                />
                 <Entry x:Name="emailEntry" Placeholder="Email"
                  TextColor="DarkGray"

@@ -25,9 +25,9 @@ namespace CrownoverBioApp
             Navigation.PushAsync(new SkillsPage());
         }
 
-        private void contactmeButton_Clicked(object sender, EventArgs e)
+        private void ContactButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ContactMePage());
+            Navigation.PushAsync(new Contact());
         }
     }
 }
