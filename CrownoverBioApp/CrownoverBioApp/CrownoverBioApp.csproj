@@ -17,10 +17,10 @@
     <EmbeddedResource Update="AboutMePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Contact.xaml">
+    <EmbeddedResource Update="ContactMePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ContactMePage.xaml">
+    <EmbeddedResource Update="ContactPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="SkillsPage.xaml">

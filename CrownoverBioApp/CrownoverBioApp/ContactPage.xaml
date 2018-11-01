@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrownoverBioApp.ContactPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="White" Spacing="10" Padding="0">
+                <StackLayout Orientation="Horizontal">
+                    <Button                    
+                    BackgroundColor="DimGray"
+                    WidthRequest="35"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    HeightRequest="50"
+                    Opacity=".5"
+                        x:Name="Backbutton"
+                        Clicked="Backbutton_Clicked"
+                    />
+                <Label Text="         Lydia Crownover"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                TextColor="Purple"
+                FontSize="24"/>
+                </StackLayout>
+                <BoxView                     
+                     BackgroundColor=" Black"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Start"                   
+                        HeightRequest="5"
+                        Opacity=".5"                      
+                />
+                <Label Text="Contacts" BackgroundColor="White" 
+                       TextColor="Purple"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       FontSize="20"/>
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <Image x:Name="emailicon"
+                       Source="emailicon.png"
+                           WidthRequest="50"/>
+                    <Label 
+                        HeightRequest="20"
+                        WidthRequest="170"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        HorizontalTextAlignment="Center"
+                        Text="lydiacrownover97@gmail.com" 
+                        BackgroundColor="MediumOrchid"
+                        TextColor="White"
+                        FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <Image x:Name="phoneicon"
+                       Source="phoneicon.png"
+                           WidthRequest="50"/>
+                    <Label 
+                        HeightRequest="20"
+                        WidthRequest="100"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        HorizontalTextAlignment="Center"
+                        Text="316-706-6632" 
+                        BackgroundColor="MediumOrchid"
+                        TextColor="White"
+                        FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <Image x:Name="instagramicon"
+                           Source="instagramicon.png"
+                           WidthRequest="50"
+                           />
+                    <Label 
+                        HeightRequest="20"
+                        WidthRequest="70"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        HorizontalTextAlignment="Center"
+                        Text="crownie_lc" 
+                        BackgroundColor="MediumOrchid"
+                        TextColor="White"
+                        FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <Image x:Name="twittericon"
+                       Source="twittericon.png"
+                           WidthRequest="50"/>
+                    <Label 
+                        HeightRequest="20"
+                        WidthRequest="70"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        HorizontalTextAlignment="Center"
+                        Text="crownie_lc" 
+                        BackgroundColor="MediumOrchid"
+                        TextColor="White"
+                        FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="10">
+                    <Image x:Name="facebookicon"
+                       Source="facebookicon.png"
+                           WidthRequest="50"/>
+                    <Label 
+                        HeightRequest="20"
+                        WidthRequest="115"
+                        VerticalOptions="Center"
+                        HorizontalOptions="End"
+                        HorizontalTextAlignment="Center"
+                        Text="Lydia Crownover" 
+                        BackgroundColor="MediumOrchid"
+                        TextColor="White"
+                        FontAttributes="Bold"/>
+                </StackLayout>
+                
+               
+                <BoxView Margin="15"                   
+                     BackgroundColor=" Black"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Start"                   
+                        HeightRequest="5"
+                        Opacity=".5"                      
+                />
+                <Button
+                    Text="Send me a message!"
+                    BackgroundColor="MediumOrchid" 
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                     WidthRequest="200"
+                    FontSize="22"
+                    x:Name="ContactFormButton"
+                    Clicked="ContactFormButton_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

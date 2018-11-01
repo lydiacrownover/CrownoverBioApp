@@ -10,14 +10,19 @@ using Xamarin.Forms.Xaml;
 namespace CrownoverBioApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Contact : ContentPage
+	public partial class ContactPage : ContentPage
 	{
-		public Contact ()
+		public ContactPage ()
 		{
 			InitializeComponent ();
 		}
 
-        private void contactmeButton_Clicked(object sender, EventArgs e)
+        private void Backbutton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainPage());
+        }
+
+        private void ContactFormButton_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new ContactMePage());
         }

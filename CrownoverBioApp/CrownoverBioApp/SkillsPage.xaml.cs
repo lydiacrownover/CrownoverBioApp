@@ -22,23 +22,19 @@ namespace CrownoverBioApp
             this.Skills = new ObservableCollection<string>();
             this.Skills.Add("HTML");
             this.Skills.Add("CSS");
-            this.Skills.Add("add stuff to this list!");
+            this.Skills.Add("Visual Basic");
+            this.Skills.Add("Adobe Photoshop");
+            this.Skills.Add("Adobe Illustrator");
+            this.Skills.Add("Adobe InDesign");
+            this.Skills.Add("Adobe XD");
+            this.Skills.Add("Microsoft Suite"); 
 
             skillsListView.ItemsSource = this.Skills;
 		}
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private void Backbutton_Clicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(skillEntry.Text))
-            {
-                DisplayAlert("Error", "Please Enter Skill", "Ok");
-                return;
-            }
-            this.Skills.Add(skillEntry.Text);
-
-            skillEntry.Text = "";
-
-            skillsListView.ItemsSource = this.Skills;
+            Navigation.PushAsync(new MainPage());
         }
     }
     

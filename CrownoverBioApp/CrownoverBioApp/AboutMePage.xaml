@@ -51,6 +51,8 @@
                     VerticalOptions="Center"
                     HeightRequest="50"
                     Opacity=".5"
+                        x:Name="Backbutton"
+                        Clicked="Backbutton_Clicked"
                     />
                     <Image x:Name="backicon"
                       Source="backicon.png"
@@ -190,7 +192,7 @@
                        FontSize="20"
                        FontAttributes="Italic"
                        VerticalOptions="Start"
-                       HorizontalOptions="End"
+                       HorizontalOptions="Center"
                     />
                     <BoxView
                         Grid.Row="13"
@@ -217,7 +219,7 @@
                        FontSize="20"
                        FontAttributes="Italic"
                        VerticalOptions="Start"
-                       HorizontalOptions="End"
+                       HorizontalOptions="Center"
                     />
                     <BoxView
                         Grid.Row="15"

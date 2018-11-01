@@ -3,19 +3,80 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CrownoverBioApp.SkillsPage">
     <ContentPage.Content>
-        <StackLayout Padding="20" Spacing="20">
+        <ScrollView>
+            <StackLayout Padding="0" Spacing="0" BackgroundColor="White">
+
+                <StackLayout Spacing="0" Padding="0" Orientation="Horizontal">
+                    <Button                  
+                    BackgroundColor="DimGray"
+                    WidthRequest="35"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    HeightRequest="50"
+                    Opacity=".5"
+                        x:Name="Backbutton"
+                        Clicked="Backbutton_Clicked"
+                    />
+                    <Label               
+                Text="           Lydia Crownover"
             
-            <Label Text="Skills"
-                   HorizontalOptions="Center"
+               BackgroundColor="White"
+             HorizontalOptions="Center"
+                       WidthRequest="325"
+             HorizontalTextAlignment="Start"
+             VerticalTextAlignment="Center"        
+             VerticalOptions="Start"
+                       HeightRequest="60"
+               FontFamily="Century Gothic"
+               TextColor="Purple"
+               FontSize="24"
                />
-
-            <Entry x:Name="skillEntry"/>
-            <Button Text="Add Skill"
-                    Clicked="Button_Clicked"/>
-
-            <ListView x:Name="skillsListView"
-                
+                </StackLayout>
+                <BoxView                      
+                     BackgroundColor=" Black"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Start"                   
+                        HeightRequest="5"
+                        Opacity=".5"
+                    />
+                <StackLayout Orientation="Horizontal" Padding="30" Spacing="40">
+                    <Image x:Name="betterskillsicon"
+                    Source="betterskillsicon.png"                    
+                       WidthRequest="80"
+                       HeightRequest="80"        
+                       VerticalOptions="Center"
+                       BackgroundColor="MediumOrchid"
+                    />
+                    <Label Text=" Skills"
+                   FontAttributes="Bold"
+                   TextColor="Purple"
+                   FontSize="22"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
                 />
-        </StackLayout>
+                </StackLayout>
+                <BoxView                      
+                     BackgroundColor=" Black"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"                   
+                        HeightRequest="5"
+                    WidthRequest="265"
+                        Opacity=".5"
+                    />
+                <ListView x:Name="skillsListView">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="30">
+                                    <Label TextColor="Purple" Text="{Binding .}" HorizontalOptions="Center" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
